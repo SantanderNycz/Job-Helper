@@ -22,9 +22,9 @@ export default function LinkField({
       {!link.locked && (
         <button
           onClick={() => onLock(index)}
-          className="bg-green-500 text-white px-3 py-1 rounded"
+          className="bg-blue-500 px-3 py-1 rounded"
         >
-          ✔
+          <img className="text-white w-8" src="/public/copy.png" alt="copy" />
         </button>
       )}
       {link.locked && (
